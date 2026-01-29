@@ -1473,7 +1473,7 @@ function Library:MakeOutline(Frame: GuiObject, Corner: number?, ZIndex: number?)
 
     if Corner and Corner > 0 then
         New("UICorner", {
-            CornerRadius = UDim.new(0, Corner + 10),
+            CornerRadius = UDim.new(0, Corner + 20),
             Parent = Holder,
         })
         New("UICorner", {
@@ -2186,7 +2186,7 @@ do
                 Parent = Holder,
             })
             New("UICorner", {
-                CornerRadius = UDim.new(0, Library.CornerRadius / 10),
+                CornerRadius = UDim.new(0, Library.CornerRadius / 2),
                 Parent = Checkbox,
             })
             New("UIStroke", {
@@ -3563,7 +3563,7 @@ do
             Parent = Button,
         })
         New("UICorner", {
-            CornerRadius = UDim.new(0, Library.CornerRadius / 10),
+            CornerRadius = UDim.new(0, Library.CornerRadius / 2),
             Parent = Checkbox,
         })
 
@@ -3766,7 +3766,7 @@ do
             Parent = Button,
         })
         New("UICorner", {
-            CornerRadius = UDim.new(0, 10),
+            CornerRadius = UDim.new(1, 0),
             Parent = Switch,
         })
         New("UIPadding", {
@@ -3788,7 +3788,7 @@ do
             Parent = Switch,
         })
         New("UICorner", {
-            CornerRadius = UDim.new(0, 10),
+            CornerRadius = UDim.new(1, 0),
             Parent = Ball,
         })
 
